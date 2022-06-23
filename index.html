@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | WEB PAGE</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        a{
+          text-decoration: none;
+          color: rgb(163, 255, 3);
+          text-shadow:
+            0 0 42px  rgba(190, 249, 53, 1.0),
+            0 0 82px  rgba(190, 249, 53, 1.0),
+            0 0 92px  rgba(190, 249, 53, 1.0),
+            0 0 102px rgb(255, 255, 255);
+        }
+        #content{
+          height: 80vh;
+          width: 60vw;
+          position: absolute;
+          top:10vh;
+          left: 20vw;
+          color: black;
+          border-radius: 1%;
+          margin: 0px;
+          padding: 2%;
+          background-color: rgba(0, 65, 66, 0.99);
+        }
+
+        .section{
+          position: absolute;
+          color: rgb(0, 0, 0);
+          padding: 3%;
+        }
+        .part_1{
+          left: 0;
+          width: 25%;
+          line-height: 250%;
+          vertical-align: middle;
+          /* transform: translateY(50%);        */
+        }
+        h4,h3{
+          margin: 0;
+          padding: 0;
+          font-size: 120%;
+        }
+        h4:hover,h3:hover{
+          font-size: 140%;
+          cursor: pointer;
+          -webkit-transition: all 500ms ease;
+          -moz-transition: all 500ms ease;
+          -ms-transition: all 500ms ease;
+          -o-transition: all 500ms ease;
+        }
+        canvas {
+          width: 100%;
+          height: 100vh;
+          display: block;
+        }
+        iframe{
+          margin-left: 25%;
+          right: 0;
+          height: 100%;
+          width: 74%;
+          background-color: rgba(21, 0, 44, 0);
+        }
+        .neonTextYellow {
+            color: rgb(163, 255, 3);
+            text-shadow:
+            0 0 42px  rgba(190, 249, 53, 1.0),
+            0 0 82px  rgba(190, 249, 53, 1.0),
+            0 0 92px  rgba(190, 249, 53, 1.0),
+            0 0 102px rgb(255, 255, 255);
+        }
+        @media screen and (max-width: 1025px) {
+            #content{
+                height: 80vh;
+                width: 85vw;
+                position: absolute;
+                top: 10vh;
+                left: 5vw;
+                color: black;
+                border-radius: 1%;
+                margin: 0px;
+                padding: 20px;
+            }
+            .part_1{
+              left: 0;
+              width: 25%;
+              line-height: 150%;
+              vertical-align: middle;
+              /* transform: translateY(50%);     */  
+            }
+            h4,h3{
+              margin: 0;
+              padding: 0;
+              font-size: 50%;
+            }
+            h4:hover,h3:hover{
+              font-size: 120%;
+              cursor: pointer;
+              -webkit-transition: all 500ms ease;
+              -moz-transition: all 500ms ease;
+              -ms-transition: all 500ms ease;
+              -o-transition: all 500ms ease;
+            }
+        }
+        @media screen and (max-width: 415px) {
+          .part_1{
+            left: 0;
+            width: 25%;
+            line-height: 150%;
+            vertical-align: middle;
+            /* transform: translateY(50%);     */
+            display: none;   
+          }
+          iframe{
+          margin-left: 0%;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(21, 0, 44, 0);
+        }
+          #content{
+            height: 70vh;
+            width: 89%;
+            position: absolute;
+            top:10vh;
+            left: 0;
+            color: black;
+            border-radius: 1%;
+            margin: 0px;
+            padding: 20px;
+            background-color: rgba(0, 65, 66, 0.99);
+          }
+        }
+        @media screen and (orientation : landscape) and (max-width: 1369){
+          #content{
+            height: 70vh;
+            width: 89%;
+            position: absolute;
+            top:6vh;
+            left: 2%;
+            color: black;
+            border-radius: 1%;
+            margin: 0px;
+            padding: 20px;
+            background-color: rgba(0, 65, 66, 0.99);
+          }
+          .part_1{
+            left: 0;
+            width: 25%;
+            line-height: 150%;
+            vertical-align: middle;
+            /* transform: translateY(0%);        */
+          }      
+          h4,h3{
+            margin: 0;
+            padding: 3%;
+            font-size: 80%;
+          }
+          .section{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            padding: 1%;
+          }
+        }
+
+        .v-isible{
+          visibility: visible;
+        }
+        .h-idden{
+          visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+      
+      <div class="section part_1 neonTextYellow">
+        <h4><a href="https://www.google.com/search?q=what+is+ui%2Fux+designer&oq=what+is+ui%2Fux+designer" target="_blank">UI / UX / DESIGNER</a></h4>
+        <h3><u> <a href="inframe.html#part_02" target="my_inframe">HOME</a></u></h3>
+        <h3><u> <a href="inframe.html#part_03" target="my_inframe">ABOUT</a></u></h3>
+        <h3><u> <a href="inframe.html#part_04" target="my_inframe">SKILLS</a></u></h3>
+        <h3><u> <a href="inframe.html#part_05" target="my_inframe">EDUCATION</a></u></h3>
+        <h3><u> <a href="inframe.html#part_06" target="my_inframe">CONTACT</a></u></h3>
+        <h3><u> <a href="resume.pdf" target="_blank">RESUME</a></u></h3>
+      </div>
+      <iframe src="inframe.html" frameborder="0" name="my_inframe" title="portfolio"></iframe>
+    </div>
+    
+</body>
+</html>
+<canvas id="canvas"></canvas>
+<!-- vertex shader -->
+<script  id="vertex-shader-3d" type="x-shader/x-vertex">
+uniform mat4 u_worldViewProjection;
+uniform vec3 u_lightWorldPos;
+uniform mat4 u_world;
+uniform mat4 u_viewInverse;
+uniform mat4 u_worldInverseTranspose;
+
+attribute vec4 a_position;
+attribute vec3 a_normal;
+attribute vec2 a_texcoord;
+
+varying vec4 v_position;
+varying vec2 v_texCoord;
+varying vec3 v_normal;
+varying vec3 v_surfaceToLight;
+varying vec3 v_surfaceToView;
+
+void main() {
+  v_texCoord = a_texcoord;
+  v_position = (u_worldViewProjection * a_position);
+  v_normal = (u_worldInverseTranspose * vec4(a_normal, 0)).xyz;
+  v_surfaceToLight = u_lightWorldPos - (u_world * a_position).xyz;
+  v_surfaceToView = (u_viewInverse[3] - (u_world * a_position)).xyz;
+  gl_Position = v_position;
+}
+</script>
+<!-- fragment shader -->
+<script  id="fragment-shader-3d" type="x-shader/x-fragment">
+precision mediump float;
+
+varying vec4 v_position;
+varying vec2 v_texCoord;
+varying vec3 v_normal;
+varying vec3 v_surfaceToLight;
+varying vec3 v_surfaceToView;
+
+uniform vec4 u_lightColor;
+uniform vec4 u_colorMult;
+uniform sampler2D u_diffuse;
+uniform vec4 u_specular;
+uniform float u_shininess;
+uniform float u_specularFactor;
+
+vec4 lit(float l ,float h, float m) {
+  return vec4(1.0,
+              abs(l),
+              (l > 0.0) ? pow(max(0.0, h), m) : 0.0,
+              1.0);
+}
+
+void main() {
+  vec4 diffuseColor = texture2D(u_diffuse, v_texCoord);
+  vec3 a_normal = normalize(v_normal);
+  vec3 surfaceToLight = normalize(v_surfaceToLight);
+  vec3 surfaceToView = normalize(v_surfaceToView);
+  vec3 halfVector = normalize(surfaceToLight + surfaceToView);
+  vec4 litR = lit(dot(a_normal, surfaceToLight),
+                    dot(a_normal, halfVector), u_shininess);
+  vec4 outColor = vec4((
+  u_lightColor * (diffuseColor * litR.y * u_colorMult +
+                u_specular * litR.z * u_specularFactor)).rgb,
+      diffuseColor.a);
+  gl_FragColor = outColor;
+//  gl_FragColor = vec4(litR.yyy, 1);
+}
+</script><!--
+for most samples webgl-utils only provides shader compiling/linking and
+canvas resizing because why clutter the examples with code that's the same in every sample.
+See https://webglfundamentals.org/webgl/lessons/webgl-boilerplate.html
+and https://webglfundamentals.org/webgl/lessons/webgl-resizing-the-canvas.html
+for webgl-utils, m3, m4, and webgl-lessons-ui.
+-->
+<script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+<script src="https://webglfundamentals.org/webgl/resources/m4.js"></script>
+<script src="https://webglfundamentals.org/webgl/resources/primitives.js"></script>
+<script src="https://webglfundamentals.org/webgl/resources/texture-utils.js"></script>
+<script src="https://webglfundamentals.org/webgl/resources/chroma.min.js"></script>
+<script src="support.js"></script>
