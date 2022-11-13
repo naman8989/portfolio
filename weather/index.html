@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(0, 0, 0, 0.129); 
+    background-size: cover;
+    overflow: hidden;
+}
+#loaderBackground{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    background-color: #6997DB; 
+}
+#loader {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+}
+@keyframes loader {
+  0% { left: -100px }
+  100% { left: 110%; }
+}
+#loadBox {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  animation: animate .5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+}
+@keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { transform: translateY(9px) rotate(22.5deg); }
+  50% {
+    transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+    border-bottom-right-radius: 40px;
+  }
+  75% { transform: translateY(9px) rotate(67.5deg); }
+  100% { transform: translateY(0) rotate(90deg); }
+} 
+#shadow { 
+  width: 50px;
+  height: 5px;
+  background: #000;
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow .5s linear infinite;
+}
+@keyframes shadow {
+  50% {
+    transform: scale(1.2,1);
+  }
+}
+h4 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  font-weight: 200;
+  opacity: .5;
+	font-family: sans-serif;
+  color: #fff;
+}
+</style>
+<body onload="delLoader()">
+    <div id="loaderBackground">
+        <div id="loader">
+            <div id="shadow"></div>
+            <div id="loadBox"></div>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="contback">
+      <div id="container">
+        <div id="location">
+          <input type="text" id="country" placeholder="Country">
+          <input type="text" id="city" placeholder="City">
+          <input type="submit" id="check" value="Go" onclick="fetchplacehold()">
+        </div>
+
+        <div class="flex">
+          <h2 id="weatherCountry">Cityname</h2>
+          <h2 id="temperature">0°<strong>C</strong></h2>
+          <h2 id="weatherDescription">Description</h2>
+          <ul>
+            <div class="features">
+              <li id="feelsLike">Feels Like 0°C</li>
+              <li id="humidity">Humidity 0</li>
+              <li id="windSpeed">Wind Speed 0</li>
+              <li id="pressure">Pressure 0</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+ <script>
+    let preloader = document. getElementById('loaderBackground');
+    function removeLoader(){preloader.style.display = 'none'; }
+    function delLoader(){setTimeout(removeLoader, 500);}
+ </script>
+<script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+<script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+<script src="https://webgl2fundamentals.org/webgl/resources/texture-utils.js"></script>
+<script src="https://webgl2fundamentals.org/webgl/resources/chroma.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
